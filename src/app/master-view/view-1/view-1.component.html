@@ -1,0 +1,59 @@
+<div class="column-layout group">
+  <igx-buttongroup class="button-group">
+    <button igxButton igxRipple>
+      Button
+    </button>
+    <button igxButton igxRipple>
+      Button
+    </button>
+    <button igxButton igxRipple>
+      Button
+    </button>
+    <button igxButton igxRipple>
+      Button
+    </button>
+  </igx-buttongroup>
+  <div class="row-layout group_1">
+    @for (item of northwindCategories; track item) {
+      <igx-card class="card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Soft Plush Toy
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            102
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <h3 class="h3">
+            $20
+          </h3>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" type="button" igxRipple class="button">
+              View details
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                add_circle
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                shopping_cart
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                settings
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    }
+  </div>
+</div>

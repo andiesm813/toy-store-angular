@@ -1,0 +1,63 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  background-color: var(--ig-primary-500);
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.group_1 {
+  background-color: var(--ig-primary-500);
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-height: 60px;
+}
+.navbar {
+  --igx-navbar-background: #D78EAE;
+  height: max-content;
+  min-width: min-content;
+  max-width: 1440px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.view-container {
+  overflow: auto;
+  position: relative;
+  flex-grow: 1;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.avatar {
+  --igx-avatar-background: transparent;
+  margin: 0 8px 0 0;
+}
+.h5 {
+  color: var(--ig-gray-900);
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  object-fit: cover;
+  height: 240px;
+  min-width: 0;
+  min-height: 0;
+  max-height: 240px;
+  flex-shrink: 0;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
+}
